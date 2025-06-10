@@ -34,6 +34,6 @@ jobs:
           fi
       - name: Run Test with UiPath CLI
         run: |
-          cd ./uipathcli/tools
+          cd ./UiPath/testing_cross/uipathcli/tools
           chmod 777 uipcli.dll
           dotnet uipcli.dll test run "https://cloud.uipath.com/" DefaultTenant -A praveenakolluri -I 18dfa18c-d561-404a-8963-73c2018a246e -S "XA)0HjXiHe7SB9LT" --applicationScope "OR.Assets OR.BackgroundTasks OR.Execution OR.Folders OR.Jobs OR.Machines.Read OR.Robots.Read OR.Settings.Read OR.Tasks OR.TestSetExecutions OR.TestSets OR.TestSetSchedules OR.Users.Read" -s "CrossPlatform" -o "Shared"
